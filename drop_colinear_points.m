@@ -1,7 +1,6 @@
 function [new_points] = drop_colinear_points(a_star_points)
 
 
-a_star_points
 new_points = [];
 [r, c] = size(a_star_points);
 
@@ -23,7 +22,7 @@ for i = 2:r-1
 end
 
 %last point
-new_points(j,:) = a_star_points(r, :)
+new_points(j,:) = a_star_points(r, :);
 
 
 end
